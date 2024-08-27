@@ -14,6 +14,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Unit_Converter_Forms
-build_property.ProjectDir = G:\Studies\Unit Converter_Forms\Unit Converter_Forms\
+build_property.ProjectDir = G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

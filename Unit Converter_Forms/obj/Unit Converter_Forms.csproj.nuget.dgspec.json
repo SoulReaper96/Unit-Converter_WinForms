@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "G:\\Studies\\Unit Converter_Forms\\Unit Converter_Forms\\Unit Converter_Forms.csproj": {}
+    "G:\\GitHub Repo Cloned\\SoulReaper96\\Unit-Converter_WinForms\\Unit Converter_Forms\\Unit Converter_Forms.csproj": {}
   },
   "projects": {
-    "G:\\Studies\\Unit Converter_Forms\\Unit Converter_Forms\\Unit Converter_Forms.csproj": {
+    "G:\\GitHub Repo Cloned\\SoulReaper96\\Unit-Converter_WinForms\\Unit Converter_Forms\\Unit Converter_Forms.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\Studies\\Unit Converter_Forms\\Unit Converter_Forms\\Unit Converter_Forms.csproj",
+        "projectUniqueName": "G:\\GitHub Repo Cloned\\SoulReaper96\\Unit-Converter_WinForms\\Unit Converter_Forms\\Unit Converter_Forms.csproj",
         "projectName": "Unit Converter_Forms",
-        "projectPath": "G:\\Studies\\Unit Converter_Forms\\Unit Converter_Forms\\Unit Converter_Forms.csproj",
+        "projectPath": "G:\\GitHub Repo Cloned\\SoulReaper96\\Unit-Converter_WinForms\\Unit Converter_Forms\\Unit Converter_Forms.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "G:\\Studies\\Unit Converter_Forms\\Unit Converter_Forms\\obj\\",
+        "outputPath": "G:\\GitHub Repo Cloned\\SoulReaper96\\Unit-Converter_WinForms\\Unit Converter_Forms\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -29,6 +29,7 @@
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "C:\\Program Files (x86)\\Nevron OpenVision\\NugetPackage\\nevronopenvision": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -70,7 +71,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
