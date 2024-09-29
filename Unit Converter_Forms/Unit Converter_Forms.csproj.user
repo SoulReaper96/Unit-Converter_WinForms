@@ -16,9 +16,6 @@
     <Compile Update="TimeConverter.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="UnitConverterMain.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="VolumeConverter.cs">
       <SubType>Form</SubType>
     </Compile>
