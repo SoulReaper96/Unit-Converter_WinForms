@@ -7,6 +7,9 @@
     <Compile Update="LengthConverter.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="SpeedConverter.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TemperatureConverter.cs">
       <SubType>Form</SubType>
     </Compile>
