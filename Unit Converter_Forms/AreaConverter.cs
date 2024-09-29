@@ -15,6 +15,7 @@ namespace Unit_Converter_Forms
         public AreaConverter()
         {
             InitializeComponent();
+            InitializeToolStripMenu();
         }
 
         private void AreaConverter_Load(object sender, EventArgs e)
@@ -163,5 +164,76 @@ namespace Unit_Converter_Forms
 
             return valueInSquareMeters; // Default is square meters
         }
+
+        private void InitializeToolStripMenu()
+        {
+            // Initialize the ComboBox (if not done via designer)
+            UnitsTool_cmbbox = new ToolStripComboBox
+            {
+                DropDownStyle = ComboBoxStyle.DropDownList // Ensure it is non-editable
+            };
+
+            // Add items to the ComboBox
+            UnitsTool_cmbbox.Items.AddRange(new string[]
+            {
+                "Area",
+                "Length/Distance",
+                "Mass/Weight",
+                "Volume",
+                "Temperature"
+            });
+
+            // Subscribe to SelectedIndexChanged event
+            UnitsTool_cmbbox.SelectedIndexChanged += UnitSelected;
+        }
+
+        private void UnitSelected(object sender, EventArgs e)
+        {
+            // Check if a valid item is selected
+            if (UnitsTool_cmbbox.SelectedItem == null)
+            {
+                MessageBox.Show("No unit selected!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            string selectedUnit = UnitsTool_cmbbox.SelectedItem.ToString();
+
+            this.Hide(); // Hide the current form
+            LaunchUnitForm(selectedUnit); // Launch the selected unit form
+        }
+
+        private void LaunchUnitForm(string selectedUnit)
+        {
+            Form unitForm = null;
+
+            switch (selectedUnit)
+            {
+                case "Area":
+                    unitForm = new AreaConverter();
+                    break;
+                case "Length/Distance":
+                    unitForm = new LengthConverter();
+                    break;
+                case "Mass/Weight":
+                    unitForm = new WeightConverter();
+                    break;
+                case "Volume":
+                    unitForm = new VolumeConverter();
+                    break;
+                case "Temperature":
+                    unitForm = new TemperatureConverter();
+                    break;
+                default:
+                    MessageBox.Show("Invalid selection", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+            }
+
+            // Check if the form was successfully created before showing it
+            if (unitForm != null)
+            {
+                unitForm.Show();
+            }
+        }
+
     }
 }

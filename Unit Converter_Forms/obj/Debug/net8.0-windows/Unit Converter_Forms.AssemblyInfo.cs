@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Unit Converter_Forms")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cc5d5b6cb8ea932b12a16fb3f3fae1c3eb7ddef4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d53f204b712efaf8f20761d5adb7d9584040db7")]
 [assembly: System.Reflection.AssemblyProductAttribute("Unit Converter_Forms")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Unit Converter_Forms")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
