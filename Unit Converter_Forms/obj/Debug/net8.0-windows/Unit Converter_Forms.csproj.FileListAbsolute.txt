@@ -41,3 +41,4 @@ G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\
 G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.genruntimeconfig.cache
 G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\ref\Unit Converter_Forms.dll
 G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.TimeConverter.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.SpeedConverter.resources
