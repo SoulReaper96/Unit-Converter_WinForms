@@ -29,11 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AreaConverter));
-            toolStrip1 = new ToolStrip();
-            TemperatureTool_btn = new ToolStripButton();
-            VolumeTool_btn = new ToolStripButton();
-            WeightTool_btn = new ToolStripButton();
-            LengthTool_btn = new ToolStripButton();
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
@@ -43,62 +38,15 @@
             Input_tb = new TextBox();
             ToUnit_cmb = new ComboBox();
             FromUnit_cmb = new ComboBox();
+            toolStrip1 = new ToolStrip();
+            UnitsTool_dropbtn = new ToolStripDropDownButton();
+            areaToolStripMenuItem = new ToolStripMenuItem();
+            temperatureToolStripMenuItem = new ToolStripMenuItem();
+            massWeightToolStripMenuItem = new ToolStripMenuItem();
+            lengthDistanceToolStripMenuItem = new ToolStripMenuItem();
+            volumeToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1.SuspendLayout();
             SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { TemperatureTool_btn, VolumeTool_btn, WeightTool_btn, LengthTool_btn });
-            toolStrip1.Location = new Point(0, 0);
-            toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(297, 25);
-            toolStrip1.TabIndex = 19;
-            toolStrip1.Text = "toolStrip1";
-            // 
-            // TemperatureTool_btn
-            // 
-            TemperatureTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            TemperatureTool_btn.Font = new Font("Arial", 9F);
-            TemperatureTool_btn.Image = (Image)resources.GetObject("TemperatureTool_btn.Image");
-            TemperatureTool_btn.ImageTransparentColor = Color.Magenta;
-            TemperatureTool_btn.Name = "TemperatureTool_btn";
-            TemperatureTool_btn.Size = new Size(81, 22);
-            TemperatureTool_btn.Text = "Temperature";
-            TemperatureTool_btn.TextImageRelation = TextImageRelation.TextBeforeImage;
-            TemperatureTool_btn.Click += TemperatureTool_btn_Click;
-            // 
-            // VolumeTool_btn
-            // 
-            VolumeTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            VolumeTool_btn.Font = new Font("Arial", 9F);
-            VolumeTool_btn.Image = (Image)resources.GetObject("VolumeTool_btn.Image");
-            VolumeTool_btn.ImageTransparentColor = Color.Magenta;
-            VolumeTool_btn.Name = "VolumeTool_btn";
-            VolumeTool_btn.Size = new Size(52, 22);
-            VolumeTool_btn.Text = "Volume";
-            VolumeTool_btn.Click += VolumeTool_btn_Click;
-            // 
-            // WeightTool_btn
-            // 
-            WeightTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            WeightTool_btn.Font = new Font("Arial", 9F);
-            WeightTool_btn.Image = (Image)resources.GetObject("WeightTool_btn.Image");
-            WeightTool_btn.ImageTransparentColor = Color.Magenta;
-            WeightTool_btn.Name = "WeightTool_btn";
-            WeightTool_btn.Size = new Size(49, 22);
-            WeightTool_btn.Text = "Weight";
-            WeightTool_btn.Click += WeightTool_btn_Click;
-            // 
-            // LengthTool_btn
-            // 
-            LengthTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            LengthTool_btn.Font = new Font("Arial", 9F);
-            LengthTool_btn.Image = (Image)resources.GetObject("LengthTool_btn.Image");
-            LengthTool_btn.ImageTransparentColor = Color.Magenta;
-            LengthTool_btn.Name = "LengthTool_btn";
-            LengthTool_btn.Size = new Size(49, 22);
-            LengthTool_btn.Text = "Length";
-            LengthTool_btn.Click += LengthTool_btn_Click;
             // 
             // label3
             // 
@@ -182,6 +130,55 @@
             FromUnit_cmb.Size = new Size(134, 23);
             FromUnit_cmb.TabIndex = 10;
             // 
+            // toolStrip1
+            // 
+            toolStrip1.Items.AddRange(new ToolStripItem[] { UnitsTool_dropbtn });
+            toolStrip1.Location = new Point(0, 0);
+            toolStrip1.Name = "toolStrip1";
+            toolStrip1.Size = new Size(297, 25);
+            toolStrip1.TabIndex = 20;
+            toolStrip1.Text = "toolStrip1";
+            // 
+            // UnitsTool_dropbtn
+            // 
+            UnitsTool_dropbtn.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            UnitsTool_dropbtn.DropDownItems.AddRange(new ToolStripItem[] { areaToolStripMenuItem, temperatureToolStripMenuItem, massWeightToolStripMenuItem, lengthDistanceToolStripMenuItem, volumeToolStripMenuItem });
+            UnitsTool_dropbtn.Image = (Image)resources.GetObject("UnitsTool_dropbtn.Image");
+            UnitsTool_dropbtn.ImageTransparentColor = Color.Magenta;
+            UnitsTool_dropbtn.Name = "UnitsTool_dropbtn";
+            UnitsTool_dropbtn.Size = new Size(47, 22);
+            UnitsTool_dropbtn.Text = "Units";
+            // 
+            // areaToolStripMenuItem
+            // 
+            areaToolStripMenuItem.Name = "areaToolStripMenuItem";
+            areaToolStripMenuItem.Size = new Size(180, 22);
+            areaToolStripMenuItem.Text = "Area";
+            // 
+            // temperatureToolStripMenuItem
+            // 
+            temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
+            temperatureToolStripMenuItem.Size = new Size(180, 22);
+            temperatureToolStripMenuItem.Text = "Temperature";
+            // 
+            // massWeightToolStripMenuItem
+            // 
+            massWeightToolStripMenuItem.Name = "massWeightToolStripMenuItem";
+            massWeightToolStripMenuItem.Size = new Size(180, 22);
+            massWeightToolStripMenuItem.Text = "Mass/Weight";
+            // 
+            // lengthDistanceToolStripMenuItem
+            // 
+            lengthDistanceToolStripMenuItem.Name = "lengthDistanceToolStripMenuItem";
+            lengthDistanceToolStripMenuItem.Size = new Size(180, 22);
+            lengthDistanceToolStripMenuItem.Text = "Length/Distance";
+            // 
+            // volumeToolStripMenuItem
+            // 
+            volumeToolStripMenuItem.Name = "volumeToolStripMenuItem";
+            volumeToolStripMenuItem.Size = new Size(180, 22);
+            volumeToolStripMenuItem.Text = "Volume";
+            // 
             // AreaConverter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -210,12 +207,6 @@
         }
 
         #endregion
-
-        private ToolStrip toolStrip1;
-        private ToolStripButton TemperatureTool_btn;
-        private ToolStripButton LengthTool_btn;
-        private ToolStripButton VolumeTool_btn;
-        private ToolStripButton WeightTool_btn;
         private Label label3;
         private Label label2;
         private Label label1;
@@ -225,5 +216,12 @@
         private TextBox Input_tb;
         private ComboBox ToUnit_cmb;
         private ComboBox FromUnit_cmb;
+        private ToolStrip toolStrip1;
+        private ToolStripDropDownButton UnitsTool_dropbtn;
+        private ToolStripMenuItem areaToolStripMenuItem;
+        private ToolStripMenuItem temperatureToolStripMenuItem;
+        private ToolStripMenuItem massWeightToolStripMenuItem;
+        private ToolStripMenuItem lengthDistanceToolStripMenuItem;
+        private ToolStripMenuItem volumeToolStripMenuItem;
     }
 }

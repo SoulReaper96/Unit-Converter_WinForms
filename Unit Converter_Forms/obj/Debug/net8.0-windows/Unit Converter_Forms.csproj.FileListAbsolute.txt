@@ -18,3 +18,25 @@ G:\Studies\Unit Converter_Forms\Unit Converter_Forms\obj\Debug\net8.0-windows\Un
 G:\Studies\Unit Converter_Forms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.TemperatureConverter.resources
 G:\Studies\Unit Converter_Forms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.VolumeConverter.resources
 G:\Studies\Unit Converter_Forms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.WeightConverter.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\bin\Debug\net8.0-windows\Unit Converter_Forms.exe
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\bin\Debug\net8.0-windows\Unit Converter_Forms.deps.json
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\bin\Debug\net8.0-windows\Unit Converter_Forms.runtimeconfig.json
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\bin\Debug\net8.0-windows\Unit Converter_Forms.dll
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\bin\Debug\net8.0-windows\Unit Converter_Forms.pdb
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.AreaConverter.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.LengthConverter.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.TemperatureConverter.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.UnitConverterMain.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.VolumeConverter.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit_Converter_Forms.WeightConverter.resources
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.csproj.GenerateResource.cache
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.GeneratedMSBuildEditorConfig.editorconfig
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.AssemblyInfoInputs.cache
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.AssemblyInfo.cs
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.csproj.CoreCompileInputs.cache
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.sourcelink.json
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.dll
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\refint\Unit Converter_Forms.dll
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.pdb
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\Unit Converter_Forms.genruntimeconfig.cache
+G:\GitHub Repo Cloned\SoulReaper96\Unit-Converter_WinForms\Unit Converter_Forms\obj\Debug\net8.0-windows\ref\Unit Converter_Forms.dll

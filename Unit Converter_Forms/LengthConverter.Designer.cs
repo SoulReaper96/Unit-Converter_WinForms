@@ -39,10 +39,12 @@
             label2 = new Label();
             label3 = new Label();
             toolStrip1 = new ToolStrip();
-            TemperatureTool_btn = new ToolStripButton();
-            AreaTool_btn = new ToolStripButton();
-            VolumeTool_btn = new ToolStripButton();
-            WeightTool_btn = new ToolStripButton();
+            UnitsTool_dropbtn = new ToolStripDropDownButton();
+            areaToolStripMenuItem = new ToolStripMenuItem();
+            temperatureToolStripMenuItem = new ToolStripMenuItem();
+            massWeightToolStripMenuItem = new ToolStripMenuItem();
+            lengthDistanceToolStripMenuItem = new ToolStripMenuItem();
+            volumeToolStripMenuItem = new ToolStripMenuItem();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -129,57 +131,52 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { TemperatureTool_btn, AreaTool_btn, VolumeTool_btn, WeightTool_btn });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { UnitsTool_dropbtn });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(297, 25);
-            toolStrip1.TabIndex = 9;
+            toolStrip1.TabIndex = 20;
             toolStrip1.Text = "toolStrip1";
             // 
-            // TemperatureTool_btn
+            // UnitsTool_dropbtn
             // 
-            TemperatureTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            TemperatureTool_btn.Font = new Font("Arial", 9F);
-            TemperatureTool_btn.Image = (Image)resources.GetObject("TemperatureTool_btn.Image");
-            TemperatureTool_btn.ImageTransparentColor = Color.Magenta;
-            TemperatureTool_btn.Name = "TemperatureTool_btn";
-            TemperatureTool_btn.Size = new Size(81, 22);
-            TemperatureTool_btn.Text = "Temperature";
-            TemperatureTool_btn.TextImageRelation = TextImageRelation.TextBeforeImage;
-            TemperatureTool_btn.Click += TemperatureTool_btn_Click;
+            UnitsTool_dropbtn.DisplayStyle = ToolStripItemDisplayStyle.Text;
+            UnitsTool_dropbtn.DropDownItems.AddRange(new ToolStripItem[] { areaToolStripMenuItem, temperatureToolStripMenuItem, massWeightToolStripMenuItem, lengthDistanceToolStripMenuItem, volumeToolStripMenuItem });
+            UnitsTool_dropbtn.Image = (Image)resources.GetObject("UnitsTool_dropbtn.Image");
+            UnitsTool_dropbtn.ImageTransparentColor = Color.Magenta;
+            UnitsTool_dropbtn.Name = "UnitsTool_dropbtn";
+            UnitsTool_dropbtn.Size = new Size(47, 22);
+            UnitsTool_dropbtn.Text = "Units";
             // 
-            // AreaTool_btn
+            // areaToolStripMenuItem
             // 
-            AreaTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            AreaTool_btn.Font = new Font("Arial", 9F);
-            AreaTool_btn.Image = (Image)resources.GetObject("AreaTool_btn.Image");
-            AreaTool_btn.ImageTransparentColor = Color.Magenta;
-            AreaTool_btn.Name = "AreaTool_btn";
-            AreaTool_btn.Size = new Size(36, 22);
-            AreaTool_btn.Text = "Area";
-            AreaTool_btn.Click += AreaTool_btn_Click;
+            areaToolStripMenuItem.Name = "areaToolStripMenuItem";
+            areaToolStripMenuItem.Size = new Size(180, 22);
+            areaToolStripMenuItem.Text = "Area";
             // 
-            // VolumeTool_btn
+            // temperatureToolStripMenuItem
             // 
-            VolumeTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            VolumeTool_btn.Font = new Font("Arial", 9F);
-            VolumeTool_btn.Image = (Image)resources.GetObject("VolumeTool_btn.Image");
-            VolumeTool_btn.ImageTransparentColor = Color.Magenta;
-            VolumeTool_btn.Name = "VolumeTool_btn";
-            VolumeTool_btn.Size = new Size(52, 22);
-            VolumeTool_btn.Text = "Volume";
-            VolumeTool_btn.Click += VolumeTool_btn_Click;
+            temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
+            temperatureToolStripMenuItem.Size = new Size(180, 22);
+            temperatureToolStripMenuItem.Text = "Temperature";
             // 
-            // WeightTool_btn
+            // massWeightToolStripMenuItem
             // 
-            WeightTool_btn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            WeightTool_btn.Font = new Font("Arial", 9F);
-            WeightTool_btn.Image = (Image)resources.GetObject("WeightTool_btn.Image");
-            WeightTool_btn.ImageTransparentColor = Color.Magenta;
-            WeightTool_btn.Name = "WeightTool_btn";
-            WeightTool_btn.Size = new Size(49, 22);
-            WeightTool_btn.Text = "Weight";
-            WeightTool_btn.Click += WeightTool_btn_Click;
+            massWeightToolStripMenuItem.Name = "massWeightToolStripMenuItem";
+            massWeightToolStripMenuItem.Size = new Size(180, 22);
+            massWeightToolStripMenuItem.Text = "Mass/Weight";
+            // 
+            // lengthDistanceToolStripMenuItem
+            // 
+            lengthDistanceToolStripMenuItem.Name = "lengthDistanceToolStripMenuItem";
+            lengthDistanceToolStripMenuItem.Size = new Size(180, 22);
+            lengthDistanceToolStripMenuItem.Text = "Length/Distance";
+            // 
+            // volumeToolStripMenuItem
+            // 
+            volumeToolStripMenuItem.Name = "volumeToolStripMenuItem";
+            volumeToolStripMenuItem.Size = new Size(180, 22);
+            volumeToolStripMenuItem.Text = "Volume";
             // 
             // LengthConverter
             // 
@@ -220,9 +217,11 @@
         private Label label2;
         private Label label3;
         private ToolStrip toolStrip1;
-        private ToolStripButton TemperatureTool_btn;
-        private ToolStripButton AreaTool_btn;
-        private ToolStripButton VolumeTool_btn;
-        private ToolStripButton WeightTool_btn;
+        private ToolStripDropDownButton UnitsTool_dropbtn;
+        private ToolStripMenuItem areaToolStripMenuItem;
+        private ToolStripMenuItem temperatureToolStripMenuItem;
+        private ToolStripMenuItem massWeightToolStripMenuItem;
+        private ToolStripMenuItem lengthDistanceToolStripMenuItem;
+        private ToolStripMenuItem volumeToolStripMenuItem;
     }
 }
