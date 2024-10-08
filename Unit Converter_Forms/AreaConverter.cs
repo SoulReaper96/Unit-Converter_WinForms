@@ -198,8 +198,8 @@ namespace Unit_Converter_Forms
 
             string selectedUnit = UnitsTool_cmbbox.SelectedItem.ToString();
 
-            this.Hide(); // Hide the current form
             LaunchUnitForm(selectedUnit); // Launch the selected unit form
+            this.Hide(); // Hide the current form
         }
 
         private void LaunchUnitForm(string selectedUnit)
