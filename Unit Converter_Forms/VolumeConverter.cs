@@ -30,8 +30,19 @@ namespace Unit_Converter_Forms
 
             if (double.TryParse(Input_tb.Text, out inputValue))
             {
-                double outputValue = ConvertUnits(inputValue, FromUnit_cmb.SelectedItem.ToString(), ToUnit_cmb.SelectedItem.ToString());
-                Output_tb.Text = outputValue.ToString();
+                // Ensure SelectedItem is not null before calling ToString()
+                string? fromUnit = FromUnit_cmb.SelectedItem?.ToString();
+                string? toUnit = ToUnit_cmb.SelectedItem?.ToString();
+
+                if (fromUnit != null && toUnit != null)
+                {
+                    double outputValue = ConvertUnits(inputValue, fromUnit, toUnit);
+                    Output_tb.Text = outputValue.ToString();
+                }
+                else
+                {
+                    MessageBox.Show("Please select valid units.");
+                }
             }
             else
             {
@@ -257,7 +268,7 @@ namespace Unit_Converter_Forms
             UnitsTool_cmbbox.SelectedIndexChanged += UnitSelected;
         }
 
-        private void UnitSelected(object sender, EventArgs e)
+        private void UnitSelected(object? sender, EventArgs e)
         {
             // Check if a valid item is selected
             if (UnitsTool_cmbbox.SelectedItem == null)
@@ -266,7 +277,7 @@ namespace Unit_Converter_Forms
                 return;
             }
 
-            string selectedUnit = UnitsTool_cmbbox.SelectedItem.ToString();
+            string selectedUnit = UnitsTool_cmbbox.SelectedItem.ToString() ?? string.Empty;
 
             LaunchUnitForm(selectedUnit); // Launch the selected unit form
             this.Hide(); // Hide the current form
@@ -274,7 +285,7 @@ namespace Unit_Converter_Forms
 
         private void LaunchUnitForm(string selectedUnit)
         {
-            Form unitForm = null;
+            Form? unitForm = null;
 
             switch (selectedUnit)
             {
@@ -301,11 +312,7 @@ namespace Unit_Converter_Forms
                     return;
             }
 
-            // Check if the form was successfully created before showing it
-            if (unitForm != null)
-            {
-                unitForm.Show();
-            }
+            unitForm?.Show();
         }
     }
 }
