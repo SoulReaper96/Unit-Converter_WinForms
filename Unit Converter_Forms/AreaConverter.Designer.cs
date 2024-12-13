@@ -38,6 +38,7 @@
             ToUnit_cmb = new ComboBox();
             FromUnit_cmb = new ComboBox();
             toolStrip1 = new ToolStrip();
+            toolStripLabel1 = new ToolStripLabel();
             UnitsTool_cmbbox = new ToolStripComboBox();
             toolStrip1.SuspendLayout();
             SuspendLayout();
@@ -126,26 +127,29 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { UnitsTool_cmbbox });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripLabel1, UnitsTool_cmbbox });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(297, 25);
             toolStrip1.TabIndex = 20;
             toolStrip1.Text = "toolStrip1";
             // 
+            // toolStripLabel1
+            // 
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(83, 22);
+            toolStripLabel1.Text = "Tool Selection:";
+            // 
             // UnitsTool_cmbbox
             // 
-            UnitsTool_cmbbox.DoubleClickEnabled = true;
-            UnitsTool_cmbbox.Items.AddRange(new object[] { "Area", "Length/Distance", "Mass/Wheight", "Volume", "Time", "Temperature", "Speed/Velocity", "Pressure" });
             UnitsTool_cmbbox.Name = "UnitsTool_cmbbox";
-            UnitsTool_cmbbox.Size = new Size(75, 25);
-            UnitsTool_cmbbox.Text = "Units";
+            UnitsTool_cmbbox.Size = new Size(121, 25);
             // 
             // AreaConverter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(297, 156);
+            ClientSize = new Size(297, 161);
             Controls.Add(toolStrip1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -180,5 +184,6 @@
         private ComboBox FromUnit_cmb;
         private ToolStrip toolStrip1;
         private ToolStripComboBox UnitsTool_cmbbox;
+        private ToolStripLabel toolStripLabel1;
     }
 }

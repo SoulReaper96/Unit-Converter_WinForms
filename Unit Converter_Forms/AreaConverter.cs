@@ -24,34 +24,6 @@ namespace Unit_Converter_Forms
             ToUnit_cmb.SelectedIndex = 1;
         }
 
-        private void TemperatureTool_btn_Click(object sender, EventArgs e)
-        {
-            TemperatureConverter temperatureConverter = new TemperatureConverter();
-            temperatureConverter.Show();
-            this.Hide();
-        }
-
-        private void VolumeTool_btn_Click(object sender, EventArgs e)
-        {
-            VolumeConverter volumeConverter = new VolumeConverter();
-            volumeConverter.Show();
-            this.Hide();
-        }
-
-        private void WeightTool_btn_Click(object sender, EventArgs e)
-        {
-            WeightConverter weightConverter = new WeightConverter();
-            weightConverter.Show();
-            this.Hide();
-        }
-
-        private void LengthTool_btn_Click(object sender, EventArgs e)
-        {
-            LengthConverter lengthConverter = new LengthConverter();
-            lengthConverter.Show();
-            this.Hide();
-        }
-
         private void Convert_btn_Click(object sender, EventArgs e)
         {
             double inputValue;
@@ -167,25 +139,27 @@ namespace Unit_Converter_Forms
 
         private void InitializeToolStripMenu()
         {
-            // Initialize the ComboBox (if not done via designer)
-            UnitsTool_cmbbox = new ToolStripComboBox
-            {
-                DropDownStyle = ComboBoxStyle.DropDownList // Ensure it is non-editable
-            };
+            // Assuming UnitsTool_cmbbox is already initialized in the designer
+            UnitsTool_cmbbox.DropDownStyle = ComboBoxStyle.DropDownList; // Ensure it is non-editable
 
-            // Add items to the ComboBox
-            UnitsTool_cmbbox.Items.AddRange(new string[]
+            // Add items to the ComboBox if not already added in the designer
+            if (UnitsTool_cmbbox.Items.Count == 0)
             {
-                "Area",
-                "Length/Distance",
-                "Mass/Weight",
-                "Volume",
-                "Temperature"
-            });
+                UnitsTool_cmbbox.Items.AddRange(new string[]
+                {
+                    "Length/Distance",
+                    "Mass/Weight",
+                    "Volume",
+                    "Temperature",
+                    "Speed",
+                    "Time"
+                });
+            }
 
             // Subscribe to SelectedIndexChanged event
             UnitsTool_cmbbox.SelectedIndexChanged += UnitSelected;
         }
+
 
         private void UnitSelected(object sender, EventArgs e)
         {
@@ -208,9 +182,6 @@ namespace Unit_Converter_Forms
 
             switch (selectedUnit)
             {
-                case "Area":
-                    unitForm = new AreaConverter();
-                    break;
                 case "Length/Distance":
                     unitForm = new LengthConverter();
                     break;
@@ -222,6 +193,12 @@ namespace Unit_Converter_Forms
                     break;
                 case "Temperature":
                     unitForm = new TemperatureConverter();
+                    break;
+                case "Speed":
+                    unitForm = new SpeedConverter();
+                    break;
+                case "Time":
+                    unitForm = new TimeConverter();
                     break;
                 default:
                     MessageBox.Show("Invalid selection", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

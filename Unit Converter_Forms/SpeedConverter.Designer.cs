@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SpeedConverter));
             toolStrip1 = new ToolStrip();
             label3 = new Label();
             label2 = new Label();
@@ -39,18 +38,14 @@
             Input_tb = new TextBox();
             ToUnit_cmb = new ComboBox();
             FromUnit_cmb = new ComboBox();
-            areaToolStripMenuItem = new ToolStripMenuItem();
-            temperatureToolStripMenuItem = new ToolStripMenuItem();
-            massWeightToolStripMenuItem = new ToolStripMenuItem();
-            lengthDistanceToolStripMenuItem = new ToolStripMenuItem();
-            volumeToolStripMenuItem = new ToolStripMenuItem();
-            UnitsTool_dropbtn = new ToolStripDropDownButton();
+            toolStripLabel1 = new ToolStripLabel();
+            UnitsTool_cmbbox = new ToolStripComboBox();
             toolStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { UnitsTool_dropbtn });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripLabel1, UnitsTool_cmbbox });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(297, 25);
@@ -138,51 +133,22 @@
             FromUnit_cmb.Size = new Size(134, 23);
             FromUnit_cmb.TabIndex = 31;
             // 
-            // areaToolStripMenuItem
+            // toolStripLabel1
             // 
-            areaToolStripMenuItem.Name = "areaToolStripMenuItem";
-            areaToolStripMenuItem.Size = new Size(180, 22);
-            areaToolStripMenuItem.Text = "Area";
+            toolStripLabel1.Name = "toolStripLabel1";
+            toolStripLabel1.Size = new Size(83, 22);
+            toolStripLabel1.Text = "Tool Selection:";
             // 
-            // temperatureToolStripMenuItem
+            // UnitsTool_cmbbox
             // 
-            temperatureToolStripMenuItem.Name = "temperatureToolStripMenuItem";
-            temperatureToolStripMenuItem.Size = new Size(180, 22);
-            temperatureToolStripMenuItem.Text = "Temperature";
-            // 
-            // massWeightToolStripMenuItem
-            // 
-            massWeightToolStripMenuItem.Name = "massWeightToolStripMenuItem";
-            massWeightToolStripMenuItem.Size = new Size(180, 22);
-            massWeightToolStripMenuItem.Text = "Mass/Weight";
-            // 
-            // lengthDistanceToolStripMenuItem
-            // 
-            lengthDistanceToolStripMenuItem.Name = "lengthDistanceToolStripMenuItem";
-            lengthDistanceToolStripMenuItem.Size = new Size(180, 22);
-            lengthDistanceToolStripMenuItem.Text = "Length/Distance";
-            // 
-            // volumeToolStripMenuItem
-            // 
-            volumeToolStripMenuItem.Name = "volumeToolStripMenuItem";
-            volumeToolStripMenuItem.Size = new Size(180, 22);
-            volumeToolStripMenuItem.Text = "Volume";
-            // 
-            // UnitsTool_dropbtn
-            // 
-            UnitsTool_dropbtn.DisplayStyle = ToolStripItemDisplayStyle.Text;
-            UnitsTool_dropbtn.DropDownItems.AddRange(new ToolStripItem[] { areaToolStripMenuItem, temperatureToolStripMenuItem, massWeightToolStripMenuItem, lengthDistanceToolStripMenuItem, volumeToolStripMenuItem });
-            UnitsTool_dropbtn.Image = (Image)resources.GetObject("UnitsTool_dropbtn.Image");
-            UnitsTool_dropbtn.ImageTransparentColor = Color.Magenta;
-            UnitsTool_dropbtn.Name = "UnitsTool_dropbtn";
-            UnitsTool_dropbtn.Size = new Size(47, 22);
-            UnitsTool_dropbtn.Text = "Units";
+            UnitsTool_cmbbox.Name = "UnitsTool_cmbbox";
+            UnitsTool_cmbbox.Size = new Size(121, 25);
             // 
             // SpeedConverter
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(297, 156);
+            ClientSize = new Size(297, 161);
             Controls.Add(toolStrip1);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -217,11 +183,7 @@
         private TextBox Input_tb;
         private ComboBox ToUnit_cmb;
         private ComboBox FromUnit_cmb;
-        private ToolStripDropDownButton UnitsTool_dropbtn;
-        private ToolStripMenuItem areaToolStripMenuItem;
-        private ToolStripMenuItem temperatureToolStripMenuItem;
-        private ToolStripMenuItem massWeightToolStripMenuItem;
-        private ToolStripMenuItem lengthDistanceToolStripMenuItem;
-        private ToolStripMenuItem volumeToolStripMenuItem;
+        private ToolStripLabel toolStripLabel1;
+        private ToolStripComboBox UnitsTool_cmbbox;
     }
 }
