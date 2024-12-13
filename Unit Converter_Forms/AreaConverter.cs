@@ -171,7 +171,6 @@ namespace Unit_Converter_Forms
             UnitsTool_cmbbox.SelectedIndexChanged += UnitSelected;
         }
 
-
         private void UnitSelected(object? sender, EventArgs e)
         {
             // Check if a valid item is selected
